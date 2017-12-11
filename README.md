@@ -1,25 +1,27 @@
-AWS EC2 setup env
+# AWS EC2 setup env
 
 launch Amazon Linux AMI 2017.09.0 (HVM) in EC2
-chmod 400 pem.pem
-sudo ssh -i nwen406.pem ec2-user@ec2-52-64-15-213.ap-southeast-2.compute.amazonaws.com
+chmod 400 angular.pem
+sudo ssh -i angular.pem ec2-user@ec2-52-14-28-254.us-east-2.compute.amazonaws.com
 sudo yum install git
-git
 
-git checkout -b adrian
-git push --set-upstream origin adrian
-git checkout -b a:drian
-git push --set-upstream origin adrian
-git add .
-git commit -m 'msg'
-git push
-git checkout master
-git merge adrian
-git push
+# git
+
+sudo git clone https://github.com/flycat52/ePortfolio.git
+sudo git checkout -b adrian
+sudo git push --set-upstream origin adrian
+sudo git checkout -b a:drian
+sudo git push --set-upstream origin adrian
+sudo git add .
+sudo git commit -m 'msg'
+sudo git push
+sudo git checkout master
+sudo git merge adrian
+sudo git push
 sudo git config credential.helper store
-sudo git push https://github.com/repo.git
+sudo git push https://github.com/flycat52/ePortfolio.git
 
-Docker on EC2 AMI :
+# Docker on EC2 AMI :
 
 sudo yum update -y
 sudo yum install -y docker
