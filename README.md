@@ -54,6 +54,15 @@ https://hub.docker.com/r/kdelfour/cloud9-docker/
 docker pull kdelfour/cloud9-docker  
 docker run -it -d -p 80:80 -v /home/ec2-user/:/workspace/ kdelfour/cloud9-docker  
 
+# Front end set up 
+## install nodejs 
+curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -  
+sudo yum -y install nodejs  
+
+## Install Angualr
+sudo npm install -g @angular/cli  
+sudo ng new angular5  
+
 # reference :
 
 https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask  
