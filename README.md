@@ -59,9 +59,14 @@ docker run -it -d -p 80:80 -v /home/ec2-user/:/workspace/ kdelfour/cloud9-docker
 curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -  
 sudo yum -y install nodejs  
 
+sudo npm uninstall -g  @angular/cli  
+sudo yum remove nodejs  
+
 ## Install Angualr
 sudo npm install -g @angular/cli  
 sudo ng new angular5  
+//start angular app from c9.io
+sudo ng serve -p 8080 -H 0.0.0.0 --public-host angular-adrian_ng.c9users.io
 
 # reference :
 
