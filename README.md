@@ -2,6 +2,7 @@
 
 launch Amazon Linux AMI 2017.09.0 (HVM) in EC2   
 chmod 400 angular.pem  
+sudo chmod 777 -R angular5
 sudo ssh -i angular.pem ec2-user@ec2-52-14-28-254.us-east-2.compute.amazonaws.com  
 sudo yum install git 
 
@@ -64,7 +65,7 @@ sudo yum remove nodejs
 sudo npm install -g @angular/cli  
 sudo ng new angular5  
 //start angular app from c9.io
-sudo ng serve -p 8080 -H 0.0.0.0 --public-host angular-adrian_ng.c9users.io
+sudo ng serve -p 8080 -H 0.0.0.0 --public-host angular-adrian-ng.c9users.io
 
 # reference :
 
