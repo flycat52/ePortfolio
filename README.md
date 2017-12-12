@@ -8,10 +8,8 @@ sudo yum install git
 # git
 
 sudo git clone https://github.com/flycat52/ePortfolio.git
-sudo git checkout -b adrian
-sudo git push --set-upstream origin adrian
-sudo git checkout -b a:drian
-sudo git push --set-upstream origin adrian
+sudo git checkout -b fe  
+sudo git push --set-upstream origin fe   
 sudo git stash //clean working directory
 sudo git add .  
 sudo git commit -m 'readme.md'  
